@@ -1,4 +1,4 @@
-# M3C1 IMAGE GENERATOR | POWERED BY NANO BANANA
+# M3C1 DIFFUSION - IMAGE GENERATOR
 
 Powered by the Nano Banana API + Next.js
 
@@ -46,6 +46,7 @@ GEMINI_API_KEY=INSERT-YOUR-KEY-HERE
 
 **Set-up**
 
+{
 git clone https://github.com/marcellacarone/m3c1-nano.git
 
 cd m3c1-nano
@@ -53,7 +54,7 @@ cd m3c1-nano
 npm install
 
 npm run dev
-
+}
 
 Then visit http://localhost:3000
 

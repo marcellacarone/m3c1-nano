@@ -1,6 +1,6 @@
-# M3C1 Architectural image generator
+# M3C1 IMAGE GENERATOR | POWERED BY NANO BANANA
 
-Powered by the Nano Banana API + Gemini + Next.js
+Powered by the Nano Banana API + Next.js
 
 This app allows architects and designers to generate consistent AI-based architectural images including alternate views, diagrams, and model studies, from one or more reference images.
 
@@ -36,6 +36,7 @@ Download all results in a single ZIP — filenames include seed + prompt name.
 
 
 **Configuration**
+
 To configure your app, you should have an GEMINI API KEY and follow the steps:
 
 - create a file .env.local in the root folder
@@ -44,10 +45,15 @@ GEMINI_API_KEY=INSERT-YOUR-KEY-HERE
 
 
 **Set-up**
+
 git clone https://github.com/marcellacarone/m3c1-nano.git
+
 cd m3c1-nano
+
 npm install
+
 npm run dev
+
 
 Then visit http://localhost:3000
 

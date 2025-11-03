@@ -1,5 +1,7 @@
 # M3C1 DIFFUSION - IMAGE GENERATOR
 
+![alt text](<Captura de tela 2025-11-03 151105.jpg>)
+
 Powered by the Nano Banana API + Next.js
 
 This app allows architects and designers to generate consistent AI-based architectural images including alternate views, diagrams and model studies, from one or more reference images.

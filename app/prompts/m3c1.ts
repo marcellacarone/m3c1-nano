@@ -60,11 +60,11 @@ export const PROMPTS: PromptItem[] = [
   {
     name: "watercolor",
     prompt:
-      "Hand-drawn architectural sketch of the same project, fine ink lines with soft watercolor wash. Slight paper texture visible, light touches of color for shadows and glazing. Perspective view capturing essence of form and massing. Artistic representation in the style of Álvaro Siza or Toyo Ito sketchbooks.",
+      "Hand-drawn architectural sketch of the same project, fine ink lines with soft watercolor wash. Slight paper texture visible, light touches of color for shadows and glazing. Perspective view capturing essence of form and massing. Artistic representation in the style of architect sketchbooks.",
   },
   {
     name: "facade_details",
     prompt:
-      "Perspective section of the building’s façade, showing only a cropped portion with full constructive realism. Cut through structure, glazing, mullions, and cladding layers, exposing insulation, shading devices, and fixings in precise alignment. Keep all materials, colors, and proportions identical to the reference image. Depict accurate junctions between floor slabs, curtain wall, and façade panels. Soft daylight (5500 K), neutral white background, subtle ambient shadows. Presented in the style of MVRDV or BIG competition boards — a didactic yet photorealistic perspective detail revealing architectural logic and tectonic beauty.",
+      "Perspective section of the building’s façade, showing only a cropped portion with full constructive realism. Cut through structure, glazing, mullions, and cladding layers, exposing insulation, shading devices, and fixings in precise alignment. Keep all materials, colors, and proportions identical to the reference image. Depict accurate junctions between floor slabs, curtain wall, and façade panels. Soft daylight (5500 K), neutral white background, subtle ambient shadows. Presented in the style of architectural competition boards — a didactic yet photorealistic perspective detail revealing architectural logic and tectonic beauty.",
   },
 ];

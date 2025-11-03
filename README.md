@@ -9,31 +9,31 @@ Built for creative workflows at M3C1
 
 ## Features
 
--Custom AI pipeline using Nano Banana API and Gemini
+- Custom AI pipeline using Nano Banana API and Gemini
 
--Image-to-Image consistency for architectural references
+- Image-to-Image consistency for architectural references
 
--Multiple prompt presets (angles, diagrams, axonometric views, details, etc.)
+- Multiple prompt presets (angles, diagrams, axonometric views, details, etc.)
 
--Seed control
+- Seed control
 
--Automatic ZIP export of all generated outputs
+- Automatic ZIP export of all generated outputs
 
--Next.js frontend for quick experimentation and visual feedback
+- Next.js frontend for quick experimentation and visual feedback
 
 
 
 ## How It Works
 
-Upload one or more reference images of your project.
+- Upload one or more reference images of your project.
 
-Choose from a set of predefined prompts (35mm, 50mm, axo, napkin sketch, diagram, etc.).
+- Choose from a set of predefined prompts (35mm, 50mm, axo, napkin sketch, diagram, etc.).
 
-Optionally define a global or per-prompt random seed.
+- Optionally define a global or per-prompt random seed.
 
-Generate images via the Nano Banana API.
+- Generate images via the Nano Banana API.
 
-Download all results in a single ZIP - filenames include seed + prompt name.
+- Download all results in a single ZIP - filenames include seed + prompt name.
 
 
 ## Set-up

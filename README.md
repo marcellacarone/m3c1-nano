@@ -2,9 +2,9 @@
 
 Powered by the Nano Banana API + Next.js
 
-This app allows architects and designers to generate consistent AI-based architectural images including alternate views, diagrams, and model studies, from one or more reference images.
+This app allows architects and designers to generate consistent AI-based architectural images including alternate views, diagrams and model studies, from one or more reference images.
 
-Built for creative and technical workflows at M3C1
+Built for creative workflows at M3C1
 
 
 ## Features

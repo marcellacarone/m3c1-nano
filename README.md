@@ -7,7 +7,7 @@ This app allows architects and designers to generate consistent AI-based archite
 Built for creative and technical workflows at M3C1
 
 
-**Features**
+## Features
 
 -Custom AI pipeline using Nano Banana API and Gemini
 
@@ -22,7 +22,8 @@ Built for creative and technical workflows at M3C1
 -Next.js frontend for quick experimentation and visual feedback
 
 
-**How It Works**
+
+## How It Works
 
 Upload one or more reference images of your project.
 
@@ -35,7 +36,7 @@ Generate images via the Nano Banana API.
 Download all results in a single ZIP - filenames include seed + prompt name.
 
 
-**Set-up**
+## Set-up
 
 ## Install Node.js
 
@@ -52,7 +53,7 @@ After installation, verify it by running:
 ```bash
 node -v
 npm -v
-
+```
 
 ## git clone and run
 
@@ -75,7 +76,7 @@ npm run dev
 Then visit http://localhost:3000
 
 
-**Configuration**
+## Configuration
 
 To configure your app, you should have an GEMINI API KEY and follow the steps:
 
@@ -84,7 +85,7 @@ To configure your app, you should have an GEMINI API KEY and follow the steps:
 GEMINI_API_KEY=INSERT-YOUR-KEY-HERE
 
 
-**Authors**
+## Authors
 
 Marcella Carone | @marcellacarone
 

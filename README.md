@@ -88,7 +88,7 @@ npm run dev
 
 To configure your app, you should have an GEMINI API KEY and follow the steps:
 
-- create a file **"env.local** in the root folder
+- create a file **.env.local** in the root folder
 - this file should contain your API KEY:
 
 ```

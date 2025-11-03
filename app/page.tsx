@@ -206,13 +206,21 @@ export function Home() {
         M3C1 – Nano Banana Generator
       </h1>
 
-      {/* Upload */}
-      <input
-        type="file"
-        multiple
-        onChange={(e) => setFiles(Array.from(e.target.files || []))}
-        style={{ marginBottom: 12 }}
-      />
+     {/* Upload */}
+<label
+  htmlFor="file-upload"
+  className="cursor-pointer bg-[#111] text-white px-4 py-2 rounded-lg hover:bg-[#222] transition-colors inline-block"
+>
+  Upload Files
+</label>
+<input
+  id="file-upload"
+  type="file"
+  multiple
+  onChange={(e) => setFiles(Array.from(e.target.files || []))}
+  className="hidden"
+/>
+
 
       {/* Painel de controles */}
       <div

@@ -5,7 +5,7 @@ export type PromptItem = {
   prompt: string;
 };
 
-// ====== PROMPTS M3C1 ESTÉTICOS (12 variações) ======
+// ====== PROMPTS (12 variações) ======
 export const PROMPTS: PromptItem[] = [
   {
     name: "new_angle_01",

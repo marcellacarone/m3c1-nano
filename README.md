@@ -44,7 +44,7 @@ Before starting the project, make sure **Node.js** is installed on your computer
 
 Download it from the official website https://nodejs.org/
 
-During installation:
+- Install v22.21.0
 - Keep the default options;
 - Check **“Add to PATH”** so you can use Node from the terminal.
 

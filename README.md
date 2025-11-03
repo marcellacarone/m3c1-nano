@@ -32,19 +32,29 @@ Optionally define a global or per-prompt random seed.
 
 Generate images via the Nano Banana API.
 
-Download all results in a single ZIP — filenames include seed + prompt name.
-
-
-**Configuration**
-
-To configure your app, you should have an GEMINI API KEY and follow the steps:
-
-- create a file .env.local in the root folder
-- this file should contain your API KEY :
-GEMINI_API_KEY=INSERT-YOUR-KEY-HERE
+Download all results in a single ZIP - filenames include seed + prompt name.
 
 
 **Set-up**
+
+## Install Node.js
+
+Before starting the project, make sure **Node.js** is installed on your computer.
+
+Download it from the official website https://nodejs.org/
+
+During installation:
+- Keep the default options;
+- Check **“Add to PATH”** so you can use Node from the terminal.
+
+After installation, verify it by running:
+
+```bash
+node -v
+npm -v
+
+
+## git clone and run
 
 ```
 git clone https://github.com/marcellacarone/m3c1-nano.git
@@ -63,6 +73,15 @@ npm run dev
 ```
 
 Then visit http://localhost:3000
+
+
+**Configuration**
+
+To configure your app, you should have an GEMINI API KEY and follow the steps:
+
+- create a file .env.local in the root folder
+- this file should contain your API KEY :
+GEMINI_API_KEY=INSERT-YOUR-KEY-HERE
 
 
 **Authors**

@@ -36,15 +36,15 @@ Built for creative workflows at M3C1
 - Download all results in a single ZIP - filenames include seed + prompt name.
 
 
-## Set-up
+## Installation
 
-## Install Node.js
+### Install Node.js
 
 Before starting the project, make sure **Node.js** is installed on your computer.
 
 Download it from the official website https://nodejs.org/
 
-- Install v22.21.0
+- Recommended version v22.21.0
 - Keep the default options;
 - Check **“Add to PATH”** so you can use Node from the terminal.
 
@@ -55,11 +55,16 @@ node -v
 npm -v
 ```
 
-## git clone and run
+### Git clone and run
+
+- Download the folder directly, or install Git: https://git-scm.com/downloads
+- Open Command Prompt (cmd) or Git Bash, then clone the repository:
 
 ```
 git clone https://github.com/marcellacarone/m3c1-nano.git
 ```
+
+- Enter m3c1-nano folder and install dependencies:
 
 ```
 cd m3c1-nano
@@ -68,6 +73,7 @@ cd m3c1-nano
 ```
 npm install
 ```
+- Run the app:
 
 ```
 npm run dev
@@ -76,14 +82,16 @@ npm run dev
 Then visit http://localhost:3000
 
 
-## Configuration
+### Configuration
 
 To configure your app, you should have an GEMINI API KEY and follow the steps:
 
-- create a file .env.local in the root folder
-- this file should contain your API KEY :
-GEMINI_API_KEY=INSERT-YOUR-KEY-HERE
+- create a file **"env.local** in the root folder
+- this file should contain your API KEY:
 
+```
+GEMINI_API_KEY=INSERT-YOUR-KEY-HERE
+```
 
 ## Authors
 

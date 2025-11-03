@@ -20,7 +20,7 @@ export const PROMPTS: PromptItem[] = [
   {
     name: "model_axo_white",
     prompt:
-      "High-resolution totally white architectural model, axonometric view from above, on urban context white base, showing all volumetric details, window openings, terraces, circulation paths, and structural articulation. Maintain consistent details and proportions from the image reference. Uniform matte white material with soft shadows. Neutral daylight environment, seamless white background. Style of museum architectural model photography from SANAA or OMA exhibitions.",
+      "High-resolution totally white architectural model, axonometric view from above, on urban context white base, showing all volumetric details, window openings, terraces, circulation paths, and structural articulation. Maintain consistent details and proportions from the image reference. Uniform matte white material with soft shadows. Neutral daylight environment, seamless white background. Style of museum architectural model photography exhibitions.",
   },
   {
     name: "model_axo_wood",
@@ -30,7 +30,7 @@ export const PROMPTS: PromptItem[] = [
   {
     name: "night_view",
     prompt:
-      "Night-time editorial photograph of the same architectural scene, identical composition and camera angle as reference. Warm interior lighting (2800 K), cool exterior reflections, visible depth of field and subtle atmospheric haze. Consistent proportions, materials, and façade rhythm. Urban ambient light and reflections on glass surfaces; cinematic realism.",
+      "Night-time editorial photograph, maintaining composition and camera angle as reference. Night environment, Warm interior lighting (2800 K), visible depth of field and subtle atmospheric haze. Consistent proportions, materials, and façade rhythm. Urban ambient light and reflections on glass surfaces; cinematic realism.",
   },
   {
     name: "sketch_b&w",

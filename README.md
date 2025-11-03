@@ -1,6 +1,6 @@
 # M3C1 DIFFUSION - IMAGE GENERATOR
 
-![alt text](<Captura de tela 2025-11-03 151105.jpg>)
+![alt text](M3C1_app.jpg)
 
 Powered by the Nano Banana API + Next.js
 
@@ -81,7 +81,7 @@ npm install
 npm run dev
 ```
 
-Then visit http://localhost:3000
+- Then visit http://localhost:3000
 
 
 ### Configuration

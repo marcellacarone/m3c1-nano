@@ -29,7 +29,7 @@ Built for creative workflows at M3C1
 
 - Upload one or more reference images of your project.
 
-- Choose from a set of predefined prompts (35mm, 50mm, axo, napkin sketch, diagram, etc.).
+- Choose from a set of predefined prompts (35mm, 50mm, model, sketch, diagram, etc.).
 
 - Optionally define a global or per-prompt random seed.
 

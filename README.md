@@ -33,7 +33,7 @@ Built for creative workflows at M3C1
 
 - Optionally define a global or per-prompt random seed.
 
-- Generate images via the Nano Banana API.
+- Generate images via Nano Banana API.
 
 - Download all results in a single ZIP - filenames include seed + prompt name.
 

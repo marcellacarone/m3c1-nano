@@ -86,7 +86,7 @@ npm run dev
 
 ### Configuration
 
-To configure your app, you should have a GEMINI API KEY and follow the steps:
+To configure your app, you should have a GEMINI API KEY for nano banana, associated to a google cloud project (I use on Google Workspace, with data confidentiality), and follow the steps:
 
 - create a file **.env.local** in the root folder
 - this file should contain your API KEY:

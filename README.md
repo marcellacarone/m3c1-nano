@@ -17,7 +17,7 @@ Built for creative workflows at M3C1
 
 - Multiple prompt presets (angles, diagrams, axonometric views, details, etc.)
 
-- Seed control
+- Seed control (deterministic outcomes are in test) 
 
 - Automatic ZIP export of all generated outputs
 
@@ -50,7 +50,7 @@ Download it from the official website https://nodejs.org/
 - Keep the default options;
 - Check **“Add to PATH”** so you can use Node from the terminal.
 
-After installation, verify it by running:
+After installation, you can verify it by running:
 
 ```bash
 node -v
@@ -86,7 +86,9 @@ npm run dev
 
 ### Configuration
 
-To configure your app, you should have a GEMINI API KEY for nano banana, associated to a google cloud project (I use on Google Workspace, with data confidentiality), and follow the steps:
+To configure your app, you should have a GEMINI API KEY for nano banana, associated to a google cloud project and with billing setup. Probably you can get initial free credits to use it. 
+
+After, follow the steps:
 
 - create a file **.env.local** in the root folder
 - this file should contain your API KEY:

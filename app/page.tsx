@@ -302,7 +302,7 @@ export function Home() {
             </label>
           </div>
           <small style={{ color: "#666" }}>
-            When enabled, each prompt uses a deterministic unique seed based on the base value.
+            When enabled, each prompt uses a unique seed
           </small>
         </div>
 

@@ -5,15 +5,20 @@ export type PromptItem = {
   prompt: string;
 };
 
-// ====== PROMPTS (12 variações) ======
+// ====== PROMPTS ======
 export const PROMPTS: PromptItem[] = [
+   {
+    name: "realistic_image",
+    prompt:
+      "transform this image into a ultra realistic photo. Enhance textures, add consistent shadows and reflections when necessary. Maintain the image proportions and camera. The architecture, furniture and objects must be exact the same, without any detail change, addition or subtraction. Be ultra consistent with materials, colors and geometry from the reference image.",
+  },
   {
     name: "new_angle_01",
     prompt:
-      "change the camera angle of the given image. Editorial architectural photograph. Daylight scene with diffuse neutral sky, soft contrast, realistic reflections on glass and metallic materials. Keep all proportions and materials identical to the reference image.",
+      "change the camera angle of the given image 30 degrees to the right. Editorial architectural photograph. Daylight scene with diffuse neutral sky, soft contrast, realistic reflections and materials. Keep all proportions and materials identical to the reference image.",
   },
   {
-    name: "new_angle_02",
+    name: "close_up",
     prompt:
       "close-up editorial photograph with a 50mm lens, zoomed on façade and volumetric articulation. Warm evening light (4000 K), long shadows, natural contrast. Maintain strict consistency with materials, color, and geometry from the original image. Slight tilt-up camera framing for a dynamic architectural feel.",
   },

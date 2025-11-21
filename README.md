@@ -2,7 +2,7 @@
 
 ![alt text](M3C1_app.jpg)
 
-Powered by the Nano Banana API + Next.js
+Powered by the Nano Banana API + Next.js - UPDATED TO RUN NANO BANANA PRO (gemini-3-pro-image-preview)
 
 This app allows architects and designers to generate consistent AI-based architectural images including alternate views, diagrams and model studies, from one or more reference images.
 

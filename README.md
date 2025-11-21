@@ -11,7 +11,7 @@ Built for creative workflows at M3C1
 
 ## Features
 
-- Custom AI pipeline using Nano Banana API and Gemini
+- Custom AI pipeline using Nano Banana API + Gemini multimodal models
 
 - Image-to-Image consistency for architectural references
 
@@ -57,10 +57,10 @@ node -v
 npm -v
 ```
 
-### Git clone and run
+### Clone the repository
 
 - Download the folder directly, or install Git: https://git-scm.com/downloads
-- Open Command Prompt (cmd) or Git Bash, then clone the repository:
+- Open Command Prompt (cmd), PowerShell or Git Bash, then clone the repository:
 
 ```
 git clone https://github.com/marcellacarone/m3c1-nano.git
@@ -75,6 +75,12 @@ cd m3c1-nano
 ```
 npm install
 ```
+- Install the new Gemini SDK:
+
+```
+npm install @google/genai
+```
+
 - Run the app:
 
 ```
@@ -86,11 +92,13 @@ npm run dev
 
 ### Configuration
 
-To configure your app, you should have a GEMINI API KEY for nano banana, associated to a google cloud project and with billing setup. Probably you can get initial free credits to use it. 
+To configure your app, you must have a PAID GEMINI API KEY for nano banana, associated to a google cloud project and with billing setup. Probably you can get initial free credits to use it. 
+
+- Create an API key in Google AI Studio: https://aistudio.google.com
 
 After, follow the steps:
 
-- create a file **.env.local** in the root folder
+- create a LOCAL file **.env.local** in the root folder
 - this file should contain your API KEY:
 
 ```

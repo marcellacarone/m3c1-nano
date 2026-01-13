@@ -23,90 +23,100 @@ Built for creative workflows at M3C1
 
 - Next.js frontend for quick experimentation and visual feedback
 
+- Copy paste images for quick imput 
 
+- Delete images from input
 
-## How It Works
+- Editting of prompts
 
-- Upload one or more reference images of your project.
+- Logging and image generation reporting
 
-- Choose from a set of predefined prompts (35mm, 50mm, model, sketch, diagram, etc.).
+- Lightbox for generated image gallery
 
-- Optionally define a global or per-prompt random seed.
+## Getting Started
 
-- Generate images via Nano Banana API.
+This guide will help you get the project up and running on your local machine for development and testing purposes.
 
-- Download all results in a single ZIP - filenames include seed + prompt name.
+### Prerequisites
 
-
-## Installation
-
-### Install Node.js
-
-Before starting the project, make sure **Node.js** is installed on your computer.
-
-Download it from the official website https://nodejs.org/
-
-- Recommended version v22.21.0
-- Keep the default options;
-- Check **“Add to PATH”** so you can use Node from the terminal.
-
-After installation, you can verify it by running:
-
-```bash
-node -v
-npm -v
-```
-
-### Clone the repository
-
-- Download the folder directly, or install Git: https://git-scm.com/downloads
-- Open Command Prompt (cmd), PowerShell or Git Bash, then clone the repository:
-
-```
-git clone https://github.com/marcellacarone/m3c1-nano.git
-```
-
-- Enter m3c1-nano folder and install dependencies:
-
-```
-cd m3c1-nano
-```
-
-```
-npm install
-```
-- Install the new Gemini SDK:
-
-```
-npm install @google/genai
-```
-
-- Run the app:
-
-```
-npm run dev
-```
-
-- Then visit http://localhost:3000
-
+- **Node.js:** Make sure you have Node.js installed. You can download it from [nodejs.org](https://nodejs.org/). The recommended version is v22.21.0 or later.
+- **Git:** You'll need Git to clone the repository. You can download it from [git-scm.com](https://git-scm.com/downloads).
+- **Docker (Optional):** If you want to run the application using Docker, you'll need to have Docker installed. You can download it from [docker.com](https://www.docker.com/products/docker-desktop).
 
 ### Configuration
 
-To configure your app, you must have a PAID GEMINI API KEY for nano banana, associated to a google cloud project and with billing setup. Probably you can get initial free credits to use it. 
+Before you can run the application, you need to set up your environment variables.
 
-- Create an API key in Google AI Studio: https://aistudio.google.com
+1.  **Create the environment file:**
+    In the root of the project, you'll find a file named `.env.local.example`. Make a copy of this file and rename it to `.env.local`.
 
-After, follow the steps:
+2.  **Set your API Keys:**
+    Open the `.env.local` file and you will see the following variables:
 
-- create a LOCAL file **.env.local** in the root folder
-- this file should contain your API KEY:
+    ```
+    GEMINI_API_KEY="your_gemini_api_key_here"
+    NGROK_AUTHTOKEN="your_ngrok_authtoken_here"
+    PUBLIC_NGROK_APP_URL="your_ngrok_app_url_here"
+    ```
 
-```
-GEMINI_API_KEY=INSERT-YOUR-KEY-HERE
-```
+    -   `GEMINI_API_KEY`: Your Gemini API key. You can get this from [Google AI Studio](https://aistudio.google.com/api-keys). You must have a paid Gemini API key associated with a Google Cloud project with billing set up.
+    -   `NGROK_AUTHTOKEN`: Your ngrok authtoken. You can get this from the [ngrok dashboard](https://dashboard.ngrok.com/get-started/your-authtoken). This is required to expose the application to the internet.
+    -   `PUBLIC_NGROK_APP_URL`: The public URL for your ngrok app. This will be provided when ngrok starts.
+
+### Local Development
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/marcellacarone/m3c1-nano.git
+    cd m3c1-nano
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Run the application:**
+    You can either use the npm script or the provided batch file:
+    ```bash
+    npm run dev
+    ```
+    or
+    ```bash
+    run-local.bat
+    ```
+    This will start the Next.js development server and ngrok concurrently. The application will be available at `http://localhost:3000`.
+
+### Docker Deployment
+
+1.  **Clone the repository** (if you haven't already):
+    ```bash
+    git clone https://github.com/marcellacarone/m3c1-nano.git
+    cd m3c1-nano
+    ```
+
+2.  **Run the Docker script:**
+    ```bash
+    run-docker.bat
+    ```
+    This script will:
+    - Build the Docker image for the application.
+    - Stop and remove any existing container with the same name.
+    - Run a new container in detached mode.
+
+3.  **Find the public URL:**
+    The application running inside the Docker container will be exposed to the internet via ngrok. To find the public URL, you need to check the container's logs:
+    ```bash
+    docker logs -f m3c1-nano-container
+    ```
+    Look for a line that contains the ngrok URL.
 
 ## Authors
 
 Marcella Carone | @marcellacarone
 
 @m3c1.com.br | São Paulo, Brazil
+
+Ionuț Anton | @ionut_anton
+
+ | Bucharest, Romania

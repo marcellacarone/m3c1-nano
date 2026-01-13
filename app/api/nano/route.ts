@@ -93,20 +93,35 @@ export async function POST(req: NextRequest) {
     const form = await req.formData();
 
     // prompts selecionados
-    let selectedNames: string[] = [];
-    const namesField = form.get("names");
-    if (typeof namesField === "string" && namesField.trim()) {
-      try {
-        selectedNames = JSON.parse(namesField);
-      } catch {
-        return jerr("Campo 'names' inválido (esperado JSON array de strings).", 400);
-      }
-    }
+    let ACTIVE_PROMPTS: {name: string, prompt: string}[] = [];
 
-    const ACTIVE_PROMPTS =
-      selectedNames.length > 0
-        ? PROMPTS.filter((p) => selectedNames.includes(p.name))
-        : PROMPTS;
+    const promptsField = form.get("prompts");
+    if (typeof promptsField === "string" && promptsField.trim()) {
+        try {
+            ACTIVE_PROMPTS = JSON.parse(promptsField);
+            if (!Array.isArray(ACTIVE_PROMPTS) || ACTIVE_PROMPTS.some(p => typeof p.name !== 'string' || typeof p.prompt !== 'string')) {
+                return jerr("Campo 'prompts' inválido (esperado JSON array de {name: string, prompt: string}).", 400);
+            }
+        } catch {
+            return jerr("Campo 'prompts' inválido (esperado JSON).", 400);
+        }
+    } else {
+        // Fallback to old logic
+        let selectedNames: string[] = [];
+        const namesField = form.get("names");
+        if (typeof namesField === "string" && namesField.trim()) {
+            try {
+                selectedNames = JSON.parse(namesField);
+            } catch {
+                return jerr("Campo 'names' inválido (esperado JSON array de strings).", 400);
+            }
+        }
+
+        ACTIVE_PROMPTS =
+          selectedNames.length > 0
+            ? PROMPTS.filter((p) => selectedNames.includes(p.name))
+            : PROMPTS;
+    }
 
     if (!ACTIVE_PROMPTS.length) {
       return jerr("Nenhum prompt selecionado/encontrado.", 400);
